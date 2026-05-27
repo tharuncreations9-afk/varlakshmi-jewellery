@@ -160,9 +160,8 @@ export default function ContactPage() {
                                 <div className="contact-details">
                                     <p><strong>Address:</strong> 8-2-120/86/9/A/23 BNR Colony,Road no:2,
                                     Banjarahills,opp.parkhyatt,Hyderabad,500034</p>
-                                    <p><strong>Phone 1:</strong> +91 90300 59009</p>
-                                    <p><strong>Phone 2:</strong> +91 99999 80090</p>
-                                    <p><strong>Email:</strong> info@varlakshmijewellery.com</p>
+                                    <p><strong>Phone 1:</strong> +91 90300 59009, +91 99999 80090</p>
+                                     <p><strong>Email:</strong> info@varlakshmijewellery.com</p>
                                     <p><strong>Hours:</strong> Mon-Sat 10am-7pm</p>            
                                 </div>
                             </div>
