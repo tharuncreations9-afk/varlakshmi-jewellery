@@ -40,13 +40,22 @@ export default function AboutPage() {
                             <div className="about-info">
                                 <span className="section-label">Our Story</span>
                                 <h2 className="section-title">Crafting Legacies Since 1980</h2>
-                                <p className="about-text">
-                                    Varlakshmi Jewellery has been a beacon of excellence in the world of fine jewellery for over four decades. Founded with a vision to blend traditional craftsmanship with modern design, we have become synonymous with quality, trust, and timeless beauty.
-                                </p>
-                                <p className="about-text">
-                                    Our master artisans combine age-old techniques with contemporary aesthetics to create pieces that tell stories of heritage and love. Each creation is a testament to our commitment to perfection and our passion for the art of jewellery making.
-                                </p>
-                            </div>
+                                <p className="della-text">
+  Varlakshmi Jewellery has been a distinguished name in premium jewellery manufacturing since 2016.
+  Our commitment to quality, artistry, and timeless design reflects a legacy of trust, precision,
+  and unmatched craftsmanship. Varlakshmi Jewellery specializes in manufacturing exquisite uncut
+  diamond and fine diamond jewellery, blending traditional techniques with contemporary elegance.
+</p>
+
+<p className="della-text">
+  Each piece is a symbol of enduring luxury, meticulously crafted and beautifully detailed,
+  designed to elevate every moment with sophistication and grace.
+</p>
+                   
+<link
+  href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap"
+  rel="stylesheet"
+/>         </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="about-image-wrapper">
@@ -69,3 +78,4 @@ export default function AboutPage() {
         </>
     );
 }
+ 

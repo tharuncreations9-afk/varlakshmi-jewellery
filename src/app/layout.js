@@ -31,6 +31,10 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400&display=swap"
           rel="stylesheet"
         />
+        <link
+  href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap"
+  rel="stylesheet"
+/>
       </head>
 
       <body

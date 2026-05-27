@@ -51,22 +51,52 @@ section {
 }
 
 
+/* NAVBAR */
 .luxury-navbar {
   z-index: 1000;
-  padding: 28px 0;
+  padding: 22px 0;
   transition: all 0.3s ease;
-  background: transparent !important; 
+  background: transparent !important;
+}
+
+.brand-wrap {
+  min-width: 0;
+  gap: 10px;
+}
+
+.brand-logo {
+  height: 42px;
+  width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.brand-text-wrap {
+  min-width: 0;
 }
 
 .luxury-brand {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(16px, 2.5vw, 22px);
+  font-size: clamp(14px, 2vw, 18px);
   color: var(--gray);
   letter-spacing: 1px;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.brand-tagline {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  color: #baa173;
+  opacity: 0.9;
+  margin-top: 2px;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .luxury-nav-links a {
-  margin-left: 40px;
+  margin-left: 32px;
   font-size: 13px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -78,7 +108,6 @@ section {
   color: var(--gold);
 }
 
-/* HAMBURGER MENU */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -111,18 +140,6 @@ section {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* MOBILE MENU */
-/* .mobile-menu-open {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  flex-direction: column !important;
-  padding: 20px 0;
-  text-align: center;
-} */
-
 .mobile-menu-open a {
   margin: 10px 0 !important;
   font-size: 16px !important;
@@ -130,14 +147,11 @@ section {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-
-  /* Show hamburger only on mobile */
   .hamburger {
     display: flex;
     z-index: 1001;
   }
 
-  /* Mobile menu default hidden */
   .luxury-nav-links {
     position: absolute;
     top: 100%;
@@ -149,14 +163,12 @@ section {
     align-items: center;
     padding: 18px 0 20px;
     gap: 15px;
-
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
   }
 
-  /* When hamburger clicked */
   .luxury-nav-links.mobile-menu-open {
     opacity: 1;
     visibility: visible;
@@ -171,25 +183,34 @@ section {
   }
 
   .luxury-navbar {
-    padding: 12px 0;
+    padding: 10px 0;
   }
 
   .luxury-navbar .container {
-    min-height: 64px;
+    min-height: 58px;
     padding-left: 16px;
     padding-right: 16px;
   }
 
+  .brand-logo {
+    height: 34px;
+  }
+
   .luxury-brand {
-    font-size: 14px;
-    line-height: 1.1;
+    font-size: 12px;
+    line-height: 1.05;
+  }
+
+  .brand-tagline {
+    font-size: 8px;
+    white-space: normal;
+    max-width: 150px;
   }
 
   .luxury-navbar .d-flex.flex-column span:last-child {
-    display: none;
+    display: block;
   }
 }
-
 
 /* VIDEO BANNER */
 .video-banner {
@@ -352,10 +373,17 @@ section:not(.video-banner) .container {
 }
 
 .footer-logo {
-  height: 60px;
+  height: 55px;
   width: auto;
   object-fit: contain;
   display: block;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    height: 34px;
+  }
 }
 
 .footer-tagline {
@@ -822,6 +850,14 @@ section:not(.video-banner) .container {
   line-height: 1.8;
   margin-bottom: 20px;
   color: var(--gray);
+}
+.della-text {
+  font-family: 'Della Respira', serif !important;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--gray);
+  letter-spacing: 0.3px;
+  margin-bottom: 24px;
 }
 
 .about-image-wrapper {
