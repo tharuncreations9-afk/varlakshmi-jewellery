@@ -32,7 +32,7 @@ export default function Footer() {
                             <Link href="/" className="footer-link">Home</Link>
                             <Link href="/about" className="footer-link">About</Link>                           
                             <Link href="/collection" className="footer-link">Collection</Link>
-                            <Link href="/gallery" className="footer-link">Gallery</Link>
+                            {/* <Link href="/gallery" className="footer-link">Gallery</Link> */}
                             <Link href="/contact" className="footer-link">Contact</Link>
                         </div>
                         <p className="footer-copyright">

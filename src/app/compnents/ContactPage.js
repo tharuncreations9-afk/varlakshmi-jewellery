@@ -158,10 +158,12 @@ export default function ContactPage() {
                                     We're here to help you find the perfect piece for your legacy.
                                 </p>
                                 <div className="contact-details">
-                                    <p><strong>Address:</strong> 123 Jewellery Street, Hyderabad, India</p>
-                                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                                    <p><strong>Address:</strong> 8-2-120/86/9/A/23 BNR Colony,Road no:2,
+                                    Banjarahills,opp.parkhyatt,Hyderabad,500034</p>
+                                    <p><strong>Phone 1:</strong> +91 90300 59009</p>
+                                    <p><strong>Phone 2:</strong> +91 99999 80090</p>
                                     <p><strong>Email:</strong> info@varlakshmijewellery.com</p>
-                                    <p><strong>Hours:</strong> Mon-Sat 10am-8pm</p>
+                                    <p><strong>Hours:</strong> Mon-Sat 10am-7pm</p>            
                                 </div>
                             </div>
                         </div>
