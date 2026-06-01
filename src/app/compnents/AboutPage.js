@@ -25,7 +25,7 @@ export default function AboutPage() {
                 {/* TEXT / LOGO */}
                 <div className="video-overlay">
                     <h1>About Us</h1>
-                    <p>
+                    <p className="della-text">
                         Discover the story behind Varlakshmi Jewellery
                     </p>
                 </div>
@@ -39,7 +39,7 @@ export default function AboutPage() {
                         <div className="col-lg-6">
                             <div className="about-info">
                                 <span className="section-label">Our Story</span>
-                                <h2 className="section-title">Crafting Legacies Since 1980</h2>
+                                <h2 className="section-title">Crafting Legacies Since 2016</h2>
                                 <p className="della-text">
   Varlakshmi Jewellery has been a distinguished name in premium jewellery manufacturing since 2016.
   Our commitment to quality, artistry, and timeless design reflects a legacy of trust, precision,

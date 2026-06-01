@@ -38,7 +38,7 @@ export default function HomePage() {
                     </div> */}
                     
                     <h1>Crafted for Legacy</h1>
-                    <p>
+                 <p className="della-text">
                         Jewellery conceived as heirlooms —
                         shaped by heritage and restraint.
                     </p>
@@ -67,15 +67,15 @@ export default function HomePage() {
                             <div className="philosophy-content">
                                 <span className="section-label">Our Story</span>
                                 <h2 className="section-title">Our Philosophy</h2>
-                                <p className="philosophy-text">
-                                    We design jewellery as heirlooms, not objects.
-                                    Every creation is guided by proportion, material honesty,
-                                    and a belief that true luxury is quiet, intentional,
-                                    and timeless.
-                                </p>
-                                <p className="philosophy-text">
-                                    Each piece tells a story of heritage, crafted with precision
-                                    and passion to be passed down through generations.
+                                <p className="della-text">
+
+                            At Varalakshmi Jewellery, we create timeless jewellery that blends tradition,
+                            craftsmanship, and elegance. Every piece is thoughtfully designed to celebrate 
+                            life's special moments and become a cherished part of your family's legacy.
+                              </p>
+                              <p className="della-text">
+                                With a commitment to quality, authenticity, and trust,
+                                we bring you jewellery that shines across generations.
                                 </p>
                             </div>
                         </div>
@@ -89,12 +89,11 @@ export default function HomePage() {
                     <div className="section-header text-center mb-5">
                         <span className="section-label">Featured</span>
                         <h2 className="section-title">Signature Collections</h2>
-                        <p className="section-subtitle">
-                            Exquisite pieces that define our legacy
+                     <p className="della-text">Exquisite pieces that define our legacy
+                           
                         </p>
                     </div>
-
-                    <div className="row g-5">
+                     <div className="row g-5">
                         <div className="col-md-4">
                             <div className="jewellery-card">
                                 <div className="jewellery-image-wrapper">
@@ -108,9 +107,9 @@ export default function HomePage() {
                                     />
                                 </div>
                                 <div className="jewellery-info">
-                                    <h5 className="jewellery-title">Heritage Gold</h5>
-                                    <p className="jewellery-description">
-                                        Inspired by classical forms and ceremonial craft.
+                                    <h5 className="jewellery-title">Emrald Maharani Collection</h5>
+                                    <p className="della-text">
+                                    Statement jewels crafted to celebrate heritage, elegance, and regal beauty.
                                     </p>
                                 </div>
                             </div>
@@ -129,9 +128,9 @@ export default function HomePage() {
                                     />
                                 </div>
                                 <div className="jewellery-info">
-                                    <h5 className="jewellery-title">Bridal Editions</h5>
-                                    <p className="jewellery-description">
-                                        Refined expressions for moments of legacy.
+                                    <h5 className="jewellery-title">Wedding Grandeur</h5>
+                                    <p className="della-text">
+                                    Handcrafted bridal masterpieces created for unforgettable moments and lasting memories.
                                     </p>
                                 </div>
                             </div>
@@ -150,9 +149,9 @@ export default function HomePage() {
                                     />
                                 </div>
                                 <div className="jewellery-info">
-                                    <h5 className="jewellery-title">Contemporary Icons</h5>
-                                    <p className="jewellery-description">
-                                        Modern silhouettes with enduring character.
+                                    <h5 className="jewellery-title">Timeless Emerald Icons</h5>
+                                    <p className="della-text">
+                                    Refined designs that blend modern sophistication with enduring luxury.
                                     </p>
                                 </div>
                             </div>
@@ -194,7 +193,7 @@ export default function HomePage() {
                     <div className="section-header text-center">
                         <span className="section-label">Browse</span>
                         <h2 className="section-title">Our Collections</h2>
-                        <p className="section-subtitle">
+                        <p className="della-text">
                             Explore our complete range of timeless jewellery
                         </p>
                     </div>

@@ -19,8 +19,7 @@ html {
 body {
   background-color: var(--beige);
   color: var(--gray);
-  font-family: 'Inter', system-ui, sans-serif;
-  line-height: 1.9;
+  font-family: 'Della Respira', serif;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -29,7 +28,7 @@ body {
 
 /* Headings */
 h1, h2, h3, h4, h5 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Della Respira', serif;
   letter-spacing: 0.5px;
   font-weight: 500;
   color: var(--gray);
@@ -53,10 +52,12 @@ section {
 
 /* NAVBAR */
 .luxury-navbar {
+  position: sticky;
+  top: 0;          /* ADD THIS */
   z-index: 1000;
   padding: 22px 0;
   transition: all 0.3s ease;
-  background: transparent !important;
+  background: #f5f5dc !important;
 }
 
 .brand-wrap {
@@ -65,7 +66,7 @@ section {
 }
 
 .brand-logo {
-  height: 42px;
+  height: 52px;
   width: auto;
   flex-shrink: 0;
   object-fit: contain;
@@ -76,7 +77,7 @@ section {
 }
 
 .luxury-brand {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display',Della respira;
   font-size: clamp(14px, 2vw, 18px);
   color: var(--gray);
   letter-spacing: 1px;
@@ -94,7 +95,14 @@ section {
   line-height: 1.2;
   white-space: nowrap;
 }
-
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+.luxury-navbar {
+  background: #f5f5dc;
+}
 .luxury-nav-links a {
   margin-left: 32px;
   font-size: 13px;
@@ -108,6 +116,15 @@ section {
   color: var(--gold);
 }
 
+/* NAVBAR */
+.luxury-navbar.scrolled .luxury-brand,
+.luxury-navbar.scrolled .luxury-nav-links a {
+  color: var(--gray);
+}
+
+.luxury-navbar.scrolled .brand-tagline {
+  color: var(--gold);
+}
 .hamburger {
   display: none;
   flex-direction: column;
@@ -217,8 +234,7 @@ section {
   position: relative;
   height: 95vh;
   width: 100%;
-  overflow: hidden;
-  background-color: var(--charcoal);
+   background-color: var(--charcoal);
 }
 
 /* RESPONSIVE VIDEO BANNER */
@@ -248,13 +264,7 @@ section {
 }
 
 /* NAVBAR ON VIDEO */
-.navbar-over-video {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 4;
-  background: transparent;
-}
+
 
 .navbar-over-video .luxury-brand,
 .navbar-over-video .luxury-nav-links a {
@@ -350,13 +360,20 @@ section:not(.video-banner) .container {
 }
 
 .footer-brand {
-  display: flex;
-  flex-direction: column;
-}
+  
+  font-family: 'Della Respira', serif;
+    font-size: clamp(14px, 2vw, 18px);
+    color: var(--gray);
+    letter-spacing: 1px;
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+  
+ 
 
 .footer-logo-name {
   display: flex;
-  align-items: center;
+  align-items: right;
   gap: 15px;
   margin-bottom: 15px;
 }
@@ -369,7 +386,7 @@ section:not(.video-banner) .container {
 
 .footer-brand-line {
   font-size: 22px;
-  color: var(--gray);
+  color: var(--gold);
 }
 
 .footer-logo {
@@ -387,13 +404,16 @@ section:not(.video-banner) .container {
 }
 
 .footer-tagline {
-  font-size: 14px;
-  color: var(--gray);
-  opacity: 0.7;
-  margin: 0;
-  font-style: italic;
-}
-
+   display: block;
+    font-size: 10px;
+    letter-spacing: 0.8px;
+    color: #baa173;
+    opacity: 0.9;
+    margin-top: -15px;
+    line-height: 1.2;
+    white-space: nowrap;
+    padding-left: 70px;
+  }
 .footer-links {
   display: flex;
   justify-content: flex-end;
@@ -1036,7 +1056,7 @@ section:not(.video-banner) .container {
 }
 
 .ornament-modal-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Della Respira', serif;
   font-size: clamp(20px, 3vw, 28px);
   color: var(--gray);
   margin: 0 0 8px 0;
@@ -1199,7 +1219,7 @@ section:not(.video-banner) .container {
 }
 
 .contact-enquiry-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Della Respira', serif;
   color: var(--gray);
   margin: 0 0 8px 0;
   font-size: 20px;
@@ -1245,16 +1265,18 @@ section:not(.video-banner) .container {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(8px);
+    z-index: 1000;
+
+    background: rgba(245, 245, 220, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .video-banner {
-    padding-top: 90px; /* navbar height */
-    height: calc(70vh + 90px);
+    padding-top: 80px;
+    height: calc(70vh + 80px);
   }
 }
-
 
 @media (min-width: 1024px) {
   .collection-grid {
@@ -1346,7 +1368,7 @@ section:not(.video-banner) .container {
   background-color: var(--ivory);
   color: var(--gray);
 
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Della Respira', serif;
   font-size: 14px;
   letter-spacing: 0.5px;
 
@@ -1384,7 +1406,7 @@ section:not(.video-banner) .container {
   padding: 12px 16px;
   border-radius: 6px;
   border: 1px solid rgba(128, 128, 128, 0.4);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Della Respira', serif;
   font-size: 14px;
 }
 
@@ -1394,7 +1416,7 @@ section:not(.video-banner) .container {
   padding: 12px 24px;
   border: none;
   border-radius: 6px;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Della Respira', serif;
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1569,7 +1591,7 @@ section:not(.video-banner) .container {
 }
 
 .login-left h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Della Respira', serif;
   font-size: 42px;
   letter-spacing: 1px;
   color: var(--gray);
@@ -1606,7 +1628,7 @@ section:not(.video-banner) .container {
 
 /* Heading */
 .login-card h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Della Respira', serif;
   color: var(--gray);
 }
 
@@ -1619,7 +1641,7 @@ section:not(.video-banner) .container {
   padding: 14px;
   border-radius: 8px;
   border: 1px solid rgba(128, 128, 128, 0.35);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Della Respira', serif;
   font-size: 15px;
   background-color: #fff;
 }
@@ -1701,7 +1723,7 @@ section:not(.video-banner) .container {
   justify-content: center;
   gap: 12px;
 
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Della Respira', serif;
   font-size: 14px;
   font-weight: 500;
   color: #444;

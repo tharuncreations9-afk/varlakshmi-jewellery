@@ -30,13 +30,10 @@ export default function Collection() {
   const endIndex = startIndex + itemsPerPage;
   const currentImages = filteredImages.slice(startIndex, endIndex);
 
-  const handleOrnamentClick = (index) => {
-    setSelectedOrnament(getOrnamentByIndex(startIndex + index));
-  };
-
-
-
-  return (
+  // const handleOrnamentClick = (index) => {
+  //   setSelectedOrnament(getOrnamentByIndex(startIndex + index));
+  // };
+ return (
     <>
       {/* HERO SECTION */}
       <section className="video-banner">
@@ -53,7 +50,7 @@ export default function Collection() {
 
         <div className="video-overlay">
           <h1>Our Collection</h1>
-          <p>Explore our exquisite range of handcrafted jewellery pieces</p>
+          <p className="della-text">Explore crafted jewellery pieces that define our legacy </p>
         </div>
       </section>
 
@@ -100,11 +97,11 @@ export default function Collection() {
               <div
                 key={startIndex + index}
                 className="collection-card"
-                onClick={() => handleOrnamentClick(index)}
-                onKeyDown={(e) => e.key === 'Enter' && handleOrnamentClick(index)}
-                role="button"
-                tabIndex={0}
-                aria-label={`View ${ornament.name}`}
+                // onClick={() => handleOrnamentClick(index)}
+                // onKeyDown={(e) => e.key === 'Enter' && handleOrnamentClick(index)}
+                // role="button"
+                // tabIndex={0}
+                // aria-label={`View ${ornament.name}`}
               >
                 <Image
                   src={src}
