@@ -51,13 +51,19 @@ section {
 
 
 /* NAVBAR */
+/* NAVBAR */
 .luxury-navbar {
   position: sticky;
-  top: 0;          /* ADD THIS */
+  top: 20px;
+  left: 0;
+  width: 100%;
   z-index: 1000;
-  padding: 22px 0;
+
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+
   transition: all 0.3s ease;
-  background: #f5f5dc !important;
 }
 
 .brand-wrap {
@@ -82,7 +88,7 @@ section {
   color: var(--gold);
   letter-spacing: 1px;
   line-height: 1.05;
-  white-space: nowrap;
+   white-space: nowrap; 
 }
 
 .brand-tagline {
@@ -368,9 +374,6 @@ section:not(.video-banner) .container {
     line-height: 1.05;
     white-space: nowrap;
   }
-  
- 
-
 .footer-logo-name {
   display: flex;
   align-items: right;
