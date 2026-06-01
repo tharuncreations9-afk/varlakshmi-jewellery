@@ -79,7 +79,7 @@ section {
 .luxury-brand {
   font-family: 'Playfair Display',Della respira;
   font-size: clamp(14px, 2vw, 18px);
-  color: var(--gray);
+  color: var(--gold);
   letter-spacing: 1px;
   line-height: 1.05;
   white-space: nowrap;
