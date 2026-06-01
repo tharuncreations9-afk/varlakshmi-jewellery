@@ -95,7 +95,7 @@ section {
   display: block;
   font-size: 10px;
   letter-spacing: 0.8px;
-  color: #baa173;
+  color: var(--gold);
   opacity: 0.9;
   margin-top: 2px;
   line-height: 1.2;
@@ -114,7 +114,7 @@ section {
   font-size: 13px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--gray);
+  color: var(--gold);
   transition: color 0.3s ease;
 }
 
