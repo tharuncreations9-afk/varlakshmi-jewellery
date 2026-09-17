@@ -7,22 +7,42 @@ const WHATSAPP_APPOINTMENT_URL =
     'https://wa.me/919999980090?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20VLJ%20Treasures.';
 
 export default function Navbar() {
-    const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-    const toggleMenu = () => {
-        setMenuOpen((prev) => !prev);
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setMenuOpen(false);
+      }
     };
 
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth > 768) {
-                setMenuOpen(false);
-            }
-        };
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
 
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <nav className={`luxury-navbar ${scrolled ? 'scrolled' : ''}`}>
+      <div className="container d-flex justify-content-between align-items-center">
+        <div className="d-flex align-items-center gap-3 brand-wrap">
+          <img
+            src="/logo.png"
+            alt="Varlakshmi Jewellery"
+            className="brand-logo"
+          />
 
     return (
         <nav className="luxury-navbar navbar-over-video">

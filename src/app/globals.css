@@ -52,11 +52,32 @@ section {
 }
 
 
+/* NAVBAR */
+/* NAVBAR */
 .luxury-navbar {
+  position: sticky;
+  top: 20px;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   padding: 20px 0;
   transition: all 0.3s ease;
-  background: transparent !important; 
+}
+
+.brand-wrap {
+  min-width: 0;
+  gap: 10px;
+}
+
+.brand-logo {
+  height: 52px;
+  width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.brand-text-wrap {
+  min-width: 0;
 }
 
 .navbar-inner {
@@ -122,12 +143,30 @@ section {
   gap: 32px;
 }
 
+.brand-tagline {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  color: var(--gold);
+  opacity: 0.9;
+  margin-top: 2px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+.luxury-navbar {
+  background: #f5f5dc;
+}
 .luxury-nav-links a {
   margin-left: 0;
   font-size: 13px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--gray);
+  color: var(--gold);
   transition: color 0.3s ease;
   line-height: 1;
   text-decoration: none;
@@ -262,14 +301,18 @@ section {
   }
 
   .luxury-navbar {
-    padding: 12px 0;
+    padding: 10px 0;
   }
 
   .luxury-navbar .container {
-    min-height: 64px;
+    min-height: 58px;
     padding-left: 16px;
     padding-right: 16px;
     position: relative;
+  }
+
+  .brand-logo {
+    height: 34px;
   }
 
   .luxury-brand {
@@ -297,14 +340,12 @@ section {
   }
 }
 
-
 /* VIDEO BANNER */
 .video-banner {
   position: relative;
   height: 95vh;
   width: 100%;
-  overflow: hidden;
-  background-color: var(--charcoal);
+   background-color: var(--charcoal);
 }
 
 /* RESPONSIVE VIDEO BANNER */
@@ -334,13 +375,7 @@ section {
 }
 
 /* NAVBAR ON VIDEO */
-.navbar-over-video {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 4;
-  background: transparent;
-}
+
 
 .navbar-over-video .luxury-brand,
 .navbar-over-video .luxury-nav-links a {
@@ -478,7 +513,7 @@ section:not(.video-banner) .container {
 
 .footer-logo-name {
   display: flex;
-  align-items: center;
+  align-items: right;
   gap: 15px;
 }
 
@@ -490,7 +525,7 @@ section:not(.video-banner) .container {
 
 .footer-brand-line {
   font-size: 22px;
-  color: var(--gray);
+  color: var(--gold);
 }
 
 .footer-brand-sub {
@@ -507,6 +542,7 @@ section:not(.video-banner) .container {
   width: auto;
   object-fit: contain;
   display: block;
+  flex-shrink: 0;
 }
 
 .footer-tagline {
@@ -518,6 +554,17 @@ section:not(.video-banner) .container {
   max-width: 420px;
 }
 
+.footer-tagline {
+   display: block;
+    font-size: 10px;
+    letter-spacing: 0.8px;
+    color: #baa173;
+    opacity: 0.9;
+    margin-top: -15px;
+    line-height: 1.2;
+    white-space: nowrap;
+    padding-left: 70px;
+  }
 .footer-links {
   display: flex;
   justify-content: space-between;
@@ -1173,6 +1220,14 @@ section:not(.video-banner) .container {
   margin-bottom: 24px;
   color: var(--gray);
 }
+.della-text {
+  font-family: 'Della Respira', serif !important;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--gray);
+  letter-spacing: 0.3px;
+  margin-bottom: 24px;
+}
 
 .about-image-wrapper {
   position: relative;
@@ -1559,16 +1614,18 @@ section:not(.video-banner) .container {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(8px);
+    z-index: 1000;
+
+    background: rgba(245, 245, 220, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .video-banner {
-    padding-top: 90px; /* navbar height */
-    height: calc(70vh + 90px);
+    padding-top: 80px;
+    height: calc(70vh + 80px);
   }
 }
-
 
 @media (min-width: 1024px) {
   .collection-grid {

@@ -39,7 +39,7 @@ export default function Collection() {
 
         <div className="video-overlay">
           <h1>Our Collection</h1>
-          <p>Explore our exquisite range of handcrafted jewellery pieces</p>
+          <p className="della-text">Explore crafted jewellery pieces that define our legacy </p>
         </div>
       </section>
 

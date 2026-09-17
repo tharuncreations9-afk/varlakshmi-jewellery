@@ -111,7 +111,7 @@ export default function ContactPage() {
                 {/* TEXT / CONTENT */}
                 <div className="video-overlay">
                     <h1>Contact Us</h1>
-                    <p>
+                    <p className="della-text">
                         Get in touch to discuss your heirloom pieces
                     </p>
                 </div>
@@ -154,7 +154,7 @@ export default function ContactPage() {
                             <div className="contact-info">
                                 <span className="section-label">Reach Out</span>
                                 <h2 className="section-title">Get In Touch</h2>
-                                <p className="contact-text">
+                                <p className="della-text">
                                     We're here to help you find the perfect piece for your legacy.
                                 </p>
                                 <div className="contact-details">

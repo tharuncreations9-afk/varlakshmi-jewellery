@@ -101,8 +101,7 @@ export default function HomePage() {
                             Exquisite pieces from VLJ Treasures
                         </p>
                     </div>
-
-                    <div className="row g-5">
+                     <div className="row g-5">
                         <div className="col-md-4">
                             <div className="jewellery-card">
                                 <div className="jewellery-image-wrapper">
@@ -165,7 +164,7 @@ export default function HomePage() {
                     <div className="section-header text-center">
                         <span className="section-label">Browse</span>
                         <h2 className="section-title">Our Collections</h2>
-                        <p className="section-subtitle">
+                        <p className="della-text">
                             Explore our complete range of timeless jewellery
                         </p>
                     </div>
