@@ -1,19 +1,14 @@
 'use client';
 
-import Link from 'next/link';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
 export default function HomePage() {
     return (
         <>
-            {/* NAVBAR */}
             <section className="video-banner">
-
                 <Navbar />
 
-
-                {/* VIDEO */}
                 <video
                     className="hero-video"
                     src="/hero.mp4"
@@ -23,31 +18,17 @@ export default function HomePage() {
                     playsInline
                 />
 
-                {/* TEXT / LOGO */}
                 <div className="video-overlay">
-                    {/* LOGO + COMPANY NAME */}
-                    {/* <div className="d-flex align-items-center gap-3 mb-4">
-                        <img
-                            src="/logo.png"
-                            alt="Varlakshmi Jewellery"
-                            style={{ height: "60px" }}
-                        />
-                        <span className="luxury-brand" style={{ fontSize: "32px", color: "var(--ivory)" }}>
-                            Varlakshmi Jewellery
-                        </span>
-                    </div> */}
-                    
+                    <p className="hero-brand-line">VLJ Treasures</p>
                     <h1>Crafted for Legacy</h1>
                     <p>
-                        Jewellery conceived as heirlooms —
+                        The retail collection of Varlakshmi Jewellery —
                         shaped by heritage and restraint.
                     </p>
                 </div>
-
             </section>
 
-
-            {/* PHILOSOPHY SECTION - MODERN LUXURY DESIGN */}
+            {/* SECTION 1 — OUR PHILOSOPHY */}
             <section className="philosophy-section">
                 <div className="container">
                     <div className="row align-items-center">
@@ -68,14 +49,10 @@ export default function HomePage() {
                                 <span className="section-label">Our Story</span>
                                 <h2 className="section-title">Our Philosophy</h2>
                                 <p className="philosophy-text">
-                                    We design jewellery as heirlooms, not objects.
-                                    Every creation is guided by proportion, material honesty,
-                                    and a belief that true luxury is quiet, intentional,
-                                    and timeless.
+                                    At VLJ Treasures, we create timeless jewellery that blends tradition, craftsmanship, and elegance. Every piece is thoughtfully designed to celebrate life&apos;s special moments and become a cherished part of your family&apos;s legacy.
                                 </p>
                                 <p className="philosophy-text">
-                                    Each piece tells a story of heritage, crafted with precision
-                                    and passion to be passed down through generations.
+                                    With a commitment to quality, authenticity, and trust, we bring you jewellery that shines across generations — crafted by Varlakshmi Jewellery, brought to you through VLJ Treasures.
                                 </p>
                             </div>
                         </div>
@@ -83,14 +60,45 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* COLLECTIONS SECTION - FEATURED DESIGN */}
+            {/* HOUSE IDENTITY — COMPANY vs RETAIL BRAND */}
+            <section className="house-section">
+                <div className="container">
+                    <div className="section-header text-center mb-5">
+                        <span className="section-label">Our House</span>
+                        <h2 className="section-title">One Craft. Two Ways We Serve.</h2>
+                        <p className="section-subtitle">
+                            VLJ Treasures A brand of Varlakshmi Jewellery.
+                        </p>
+                    </div>
+
+                    <div className="house-grid">
+                        <div className="house-column">
+                            <span className="house-role">Manufacturing &amp; Wholesale</span>
+                            <h3 className="house-name">Varlakshmi Jewellery</h3>
+                            <p className="house-copy">
+                                Premium jewellery manufacturing since 2016 — precision craft, uncut and fine diamond artistry, trusted by the trade.
+                            </p>
+                        </div>
+                        <div className="house-divider" aria-hidden="true" />
+                        <div className="house-column">
+                            <span className="house-role">Retail</span>
+                            <h3 className="house-name">VLJ Treasures</h3>
+                            <p className="house-copy">
+                                Our retail brand for you — heirloom pieces designed to celebrate life&apos;s special moments with elegance and grace.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION 2 — SIGNATURE COLLECTIONS */}
             <section className="collections-section featured-collections">
                 <div className="container">
                     <div className="section-header text-center mb-5">
                         <span className="section-label">Featured</span>
                         <h2 className="section-title">Signature Collections</h2>
                         <p className="section-subtitle">
-                            Exquisite pieces that define our legacy
+                            Exquisite pieces from VLJ Treasures
                         </p>
                     </div>
 
@@ -99,18 +107,15 @@ export default function HomePage() {
                             <div className="jewellery-card">
                                 <div className="jewellery-image-wrapper">
                                     <img
-                                        src="/pic3.png"
-                                        alt="Heritage Gold Jewellery"
+                                        src="/emerald-maharani.png"
+                                        alt="Emerald Maharani Collection"
                                         className="jewellery-image"
-                                        onError={(e) => {
-                                            e.target.src = "https://cdn.pixabay.com/photo/2018/05/18/19/20/jewelry-3411407_1280.jpg";
-                                        }}
                                     />
                                 </div>
                                 <div className="jewellery-info">
-                                    <h5 className="jewellery-title">Heritage Gold</h5>
+                                    <h5 className="jewellery-title">Emerald Maharani Collection</h5>
                                     <p className="jewellery-description">
-                                        Inspired by classical forms and ceremonial craft.
+                                        Statement jewels crafted to celebrate heritage, elegance, and regal beauty.
                                     </p>
                                 </div>
                             </div>
@@ -120,18 +125,15 @@ export default function HomePage() {
                             <div className="jewellery-card">
                                 <div className="jewellery-image-wrapper">
                                     <img
-                                        src="/pic2.png"
-                                        alt="Bridal Jewellery"
+                                        src="/wedding-grandeur.png"
+                                        alt="Wedding Grandeur"
                                         className="jewellery-image"
-                                        onError={(e) => {
-                                            e.target.src = "https://cdn.pixabay.com/photo/2017/07/24/12/43/gold-2534534_1280.jpg";
-                                        }}
                                     />
                                 </div>
                                 <div className="jewellery-info">
-                                    <h5 className="jewellery-title">Bridal Editions</h5>
+                                    <h5 className="jewellery-title">Wedding Grandeur</h5>
                                     <p className="jewellery-description">
-                                        Refined expressions for moments of legacy.
+                                        Handcrafted bridal masterpieces created for unforgettable moments and lasting memories.
                                     </p>
                                 </div>
                             </div>
@@ -141,18 +143,15 @@ export default function HomePage() {
                             <div className="jewellery-card">
                                 <div className="jewellery-image-wrapper">
                                     <img
-                                        src="/pic1.png"
-                                        alt="Contemporary Jewellery"
+                                        src="/timeless-emerald.png"
+                                        alt="Timeless Emerald Icons"
                                         className="jewellery-image"
-                                        onError={(e) => {
-                                            e.target.src = "https://cdn.pixabay.com/photo/2015/09/02/12/25/diamond-918416_1280.jpg";
-                                        }}
                                     />
                                 </div>
                                 <div className="jewellery-info">
-                                    <h5 className="jewellery-title">Contemporary Icons</h5>
+                                    <h5 className="jewellery-title">Timeless Emerald Icons</h5>
                                     <p className="jewellery-description">
-                                        Modern silhouettes with enduring character.
+                                        Refined designs that blend modern sophistication with enduring luxury.
                                     </p>
                                 </div>
                             </div>
@@ -161,34 +160,6 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* TOP IMAGES SECTION - BELOW COLLECTIONS */}
-            {/* <section className="top-images-section">
-                <div className="container">
-                    <div className="top-image-wrapper">
-                        <img
-                            src="/pic1.jpg"
-                            alt="Image 1"
-                            className="top-image"
-                        />
-                    </div>
-                    <div className="top-image-wrapper">
-                        <img
-                            src="/pic2.jpg"
-                            alt="Image 2"
-                            className="top-image"
-                        />
-                    </div>
-                    <div className="top-image-wrapper">
-                        <img
-                            src="/pic3.jpg"
-                            alt="Image 3"
-                            className="top-image"
-                        />
-                    </div>
-                </div>
-            </section> */}
-
-            {/* IMAGE GALLERY - HORIZONTAL SCROLL */}
             <section className="image-gallery-section">
                 <div className="container mb-5">
                     <div className="section-header text-center">
@@ -202,103 +173,19 @@ export default function HomePage() {
                 <div className="container-fluid px-0">
                     <div className="gallery-scroll-wrapper">
                         <div className="gallery-scroll">
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery1.jpg" 
-                                    alt="Gallery Image 1"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery2.jpg" 
-                                    alt="Gallery Image 2"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery3.jpg" 
-                                    alt="Gallery Image 3"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery4.jpg" 
-                                    alt="Gallery Image 4"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery5.jpg" 
-                                    alt="Gallery Image 5"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery6.jpg" 
-                                    alt="Gallery Image 6"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery7.jpg" 
-                                    alt="Gallery Image 7"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery8.jpg" 
-                                    alt="Gallery Image 8"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery9.jpg" 
-                                    alt="Gallery Image 9"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery10.jpg" 
-                                    alt="Gallery Image 10"
-                                />
-                            </div>
-                            {/* Duplicate for seamless loop */}
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery1.jpg" 
-                                    alt="Gallery Image 1"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery2.jpg" 
-                                    alt="Gallery Image 2"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery3.jpg" 
-                                    alt="Gallery Image 3"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery4.jpg" 
-                                    alt="Gallery Image 4"
-                                />
-                            </div>
-                            <div className="gallery-item">
-                                <img 
-                                    src="/gallery5.jpg" 
-                                    alt="Gallery Image 5"
-                                />
-                            </div>
+                            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5].map((n, i) => (
+                                <div className="gallery-item" key={`${n}-${i}`}>
+                                    <img
+                                        src={`/gallery${n}.jpg`}
+                                        alt={`Gallery Image ${n}`}
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* FOOTER */}
             <Footer />
         </>
     );

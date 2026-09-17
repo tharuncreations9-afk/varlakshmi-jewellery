@@ -75,7 +75,7 @@ export default function ContactPage() {
     const handleWhatsApp = () => {
         const details = [product, price, weight, barcode].filter(Boolean).join(', ');
         const message = `Hello, I am interested in ${product || 'this jewellery'}${details ? ` (${details})` : ''}.\nName: ${formData.name}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
-        const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`; // Replace with actual number
+        const whatsappUrl = `https://wa.me/919030059009?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
         setShowModal(false);
         // Reset form
@@ -158,10 +158,10 @@ export default function ContactPage() {
                                     We're here to help you find the perfect piece for your legacy.
                                 </p>
                                 <div className="contact-details">
-                                    <p><strong>Address:</strong> 123 Jewellery Street, Hyderabad, India</p>
-                                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                                    <p><strong>Address:</strong> 8-2-120/86/9/A/23 BNR Colony, Road no:2, Banjarahills, opp.parkhyatt, Hyderabad, 500034</p>
+                                    <p><strong>Phone:</strong> +91 90300 59009, +91 99999 80090</p>
                                     <p><strong>Email:</strong> info@varlakshmijewellery.com</p>
-                                    <p><strong>Hours:</strong> Mon-Sat 10am-8pm</p>
+                                    <p><strong>Hours:</strong> Mon-Sat 10am-7pm</p>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,7 @@ export default function ContactPage() {
                                                 border: 'none',
                                                 padding: '12px 24px',
                                                 borderRadius: '8px',
-                                                fontFamily: 'Inter',
+                                                fontFamily: 'Della Respira, Georgia, serif',
                                                 cursor: submitLoading ? 'not-allowed' : 'pointer',
                                                 opacity: submitLoading ? 0.8 : 1
                                             }}
@@ -238,7 +238,7 @@ export default function ContactPage() {
                                                     border: '1px solid var(--gray)',
                                                     padding: '12px 24px',
                                                     borderRadius: '8px',
-                                                    fontFamily: 'Inter',
+                                                    fontFamily: 'Della Respira, Georgia, serif',
                                                     cursor: 'pointer'
                                                 }}
                                             >
@@ -279,7 +279,7 @@ export default function ContactPage() {
                         maxWidth: '400px',
                         width: '90%'
                     }}>
-                        <h3 style={{ fontFamily: 'Playfair Display', color: 'var(--gray)', marginBottom: '20px' }}>
+                        <h3 style={{ fontFamily: 'Della Respira, Georgia, serif', color: 'var(--gray)', marginBottom: '20px' }}>
                             How would you like to send this enquiry?
                         </h3>
                         <div style={{ display: 'flex', gap: '15px', justifyContent: 'center' }}>
@@ -291,7 +291,7 @@ export default function ContactPage() {
                                     border: 'none',
                                     padding: '12px 20px',
                                     borderRadius: '8px',
-                                    fontFamily: 'Inter',
+                                    fontFamily: 'Della Respira, Georgia, serif',
                                     cursor: 'pointer',
                                     flex: 1
                                 }}
@@ -306,7 +306,7 @@ export default function ContactPage() {
                                     border: 'none',
                                     padding: '12px 20px',
                                     borderRadius: '8px',
-                                    fontFamily: 'Inter',
+                                    fontFamily: 'Della Respira, Georgia, serif',
                                     cursor: 'pointer',
                                     flex: 1
                                 }}
